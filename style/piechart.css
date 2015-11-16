@@ -1,0 +1,121 @@
+/**
+ * Variable power
+ */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body ul {
+  list-style: none;
+}
+body ul, body li {
+  margin: 0;
+  padding: 0;
+}
+
+.chart {
+  min-height: 400px;
+  border-bottom: 1px solid #eee;
+  padding: 1em;
+}
+
+
+
+.chart--subHeadline {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.charts--container {
+  background-color: #fff;
+  width: 100%;
+}
+@media screen and (min-width: 700px) {
+  .charts--container {
+    max-width: 700px;
+    left: 50%;
+    top: 10%;
+    margin: 5em auto;
+    box-shadow: 0 2em 2em #333;
+  }
+}
+
+.charts--headline {
+  text-align: center;
+  color: #444;
+  background-color: #fff;
+  padding: 1em;
+}
+
+
+
+.pieChart--center--innerCircle {
+  fill: #fff;
+}
+
+.pieChart--center--text {
+  font-size: 20px;
+}
+
+.pieChart--center--outerCircle {
+  fill: rgba(255, 255, 255, 0.75);
+}
+
+.pieChart--detail--divider {
+  stroke: gray;
+  stroke-width: 1;
+}
+
+.pieChart--detail--percentage {
+  font-size: 18px;
+  font-weight: 100;
+  fill: #333;
+  stroke-width: 1px;
+}
+
+.pieChart--detail--textContainer {
+  background-color: transparent;
+  margin: 0;
+  color: #666;
+  font-style: italic;
+  padding-left: 30px;
+}
+
+
+
+.pieChart__blue {
+  fill: #558DD3;
+  background-color: #558DD3;
+}
+
+.pieChart__red {
+  fill: #BD0004;
+  background-color: #BD0004;
+}
+.pieChart__green {
+  fill: #9AB959;
+  background-color: #9AB959;
+}
+.pieChart__purple {
+  fill: #942CB6;
+  background-color: #942CB6;
+}
+
+.key_color{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0,0,0,.2);
+}
+
+/**
+ * Helper classes
+ */
+.hidden {
+  display: none;
+}

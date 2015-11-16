@@ -1,0 +1,27 @@
+body{
+
+}
+.row{
+	position: relative;
+}
+.icon{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+.person {
+	margin-left: auto;
+	margin-right: auto;
+    display: block;
+    height: 150px;
+    width: 150px;
+    -moz-border-radius: 150px;
+    border-radius: 150px; 
+    padding: 10px;
+}
