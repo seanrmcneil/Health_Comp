@@ -1,5 +1,15 @@
 body { padding-bottom: 70px; }
 
+@font-face {
+    font-family: 'Avenir'; /*a name to be used later*/
+    src: url('AvenirLTStd-Book.otf'); /*URL to font*/
+}
+
+h1{
+	font-family: 'Avenir'!important;
+	font-weight: bold;
+}
+
 .row{
 	position: relative;
 }
