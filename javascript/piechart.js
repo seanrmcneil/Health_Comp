@@ -130,7 +130,7 @@
                                     .attr( 'width', infoWidth )
                                     .attr(
                                       'transform',
-                                      'translate(' + (0) + ',' + ( bBox.height + bBox.y  + 40) + ')'
+                                      'translate(' + (200) + ',' + ( bBox.height + bBox.y  + 40) + ')'
                                     );
         anchor   = 'start';
         position = 'left';
@@ -140,8 +140,8 @@
                     .append( 'text' )
                     .text ( '0 %' )
                     .attr( 'class', 'pieChart--detail--percentage' )
-                    .attr( 'x', 0 )
-                    .attr( 'y', 0 )
+                    .attr( 'x', 50 )
+                    .attr( 'y', 50 )
                     .attr( 'text-anchor', anchor )
                     .transition()
                     .duration( DURATION )
