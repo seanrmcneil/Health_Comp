@@ -17,7 +17,9 @@
 	</head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
-		<span class="glyphicon glyphicon-home home-button center col-md-12" aria-hidden="true"></span>
+		<a href="index.php">
+			<span class="glyphicon glyphicon-home home-button center col-md-12" aria-hidden="true"></span>
+		</a>
 	</nav>
 
 
