@@ -41,7 +41,6 @@ include 'header.php';
 </div>
     <script src='http://d3js.org/d3.v3.min.js'></script>
 
-        <script src="javascript/piechart.js"></script>
+    <script src="javascript/piechart.js"></script>
 
-  </body>
-</html>
+<?php include 'footer.php'; ?>
