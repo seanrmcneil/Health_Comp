@@ -1,6 +1,5 @@
-body{
+body { padding-bottom: 70px; }
 
-}
 .row{
 	position: relative;
 }
@@ -30,3 +29,22 @@ body{
 .navbar{
 	background-color: #4F81BD!important;
 }
+
+.container{
+	margin-top: 70px;
+}
+
+.home-button{
+	padding-top: 10px;
+	font-size: 30px;
+	color:white;
+	width: 33px;
+
+}
+
+.home-button:hover{
+	color: #C2C2C2;
+	cursor: pointer;
+}
+
+

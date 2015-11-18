@@ -17,9 +17,7 @@
 	</head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
-	  <div class="container">
-	    
-	  </div>
+		<span class="glyphicon glyphicon-home home-button center col-md-12" aria-hidden="true"></span>
 	</nav>
 
 
