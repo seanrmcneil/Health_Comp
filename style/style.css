@@ -1,4 +1,7 @@
-body { padding-bottom: 70px; }
+body { 
+	padding-bottom: 70px; 
+	overflow-y: scroll;
+}
 
 @font-face {
     font-family: 'Avenir'; /*a name to be used later*/
