@@ -2,66 +2,37 @@
 
 include 'header.php';
 
+$names = ["Sarah B.", "Evan C.", "John G.", "Alissa J.", "Cam D.", "Alex F.", "George P.", "Dina T.", "John C.", "Georgia S.", "Constance M.", "Timmy T."];
+$colors = ["red","blue","purple","green"];
 ?>
 
 <div class = "container">
 	<div class="row">
 		<h1 class="center">Student List</h1>
 	</div>
-	<div class="row">
-		<div class="col-md-3">
-			<div class="person center pieChart__red">
-				<a href="piechart.php">
-				<img src="images/person.png" alt="person" class="icon">
-				</a>
-			</div>
-			<h2 class="center">Sarah B.</h2>
-		</div>
-		<div class="col-md-3">
-			<div class="person center pieChart__blue">
-				<img src="images/person.png" alt="person" class="icon">
-			</div>
-			<h2 class="center">Evan C.</h2>
-		</div>
-		<div class="col-md-3">
-			<div class="person center pieChart__green">
-				<img src="images/person.png" alt="person" class="icon">
-			</div>
-			<h2 class="center">John G.</h2>
-		</div>
-		<div class="col-md-3">
-			<div class="person center pieChart__purple">
-				<img src="images/person.png" alt="person" class="icon">
-			</div>
-			<h2 class="center">Alissa J.</h2>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-3">
-			<div class="person center pieChart__green">
-				<img src="images/person.png" alt="person" class="icon">
-			</div>
-			<h2 class="center">Cam D.</h2>
-		</div>
-		<div class="col-md-3">
-			<div class="person center pieChart__purple">
-				<img src="images/person.png" alt="person" class="icon">
-			</div>
-			<h2 class="center">Alex F.</h2>
-		</div>
-		<div class="col-md-3">
-			<div class="person center pieChart__red">
-				<img src="images/person.png" alt="person" class="icon">
-			</div>
-			<h2 class="center">George P.</h2>
-		</div>
-		<div class="col-md-3">
-			<div class="person center pieChart__blue">
-				<img src="images/person.png" alt="person" class="icon">
-			</div>
-			<h2 class="center">Dina T.</h2>
-		</div>
-	</div>
+
+	<?php
+
+		foreach ($names as $index => $name){
+			if($index%4 == 0){
+				echo("<div class=\"row\">");
+			}
+			echo("<div class=\"col-md-3\">");
+				echo("<div class='person center pieChart__".$colors[$index%4]."'>");
+					echo("<a href='piechart.php?name=".$name."'>");
+					echo("<img src=\"images/person.png\" alt=\"person\" class=\"personIcon icon\">");
+					echo("</a>");
+				echo("</div>");
+				echo("<h2 class=\"center\">".$name."</h2>");
+			echo("</div>");
+			if(($index+1)%4==0){
+				echo("</div>"); //end of row
+			}
+
+		}
+
+	?>
+
 </div>
 
 <?php include 'footer.php'; ?>

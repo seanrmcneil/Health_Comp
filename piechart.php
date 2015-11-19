@@ -1,11 +1,12 @@
 <?php
 
 include 'header.php';
+$name = $_GET["name"];
 
 ?>
 <div class="container">
 <div class="row">
-  <h1 class="center">Sarah B</h1>
+  <h1 class="center"><?php echo($name); ?></h1>
 </div>
 <div class="row">
   <div class="col-md-12">
