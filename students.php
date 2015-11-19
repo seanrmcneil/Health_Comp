@@ -12,13 +12,13 @@ $colors = ["red","blue","purple","green"];
 	</div>
 
 	<?php
-
+		$colorAddition=0;
 		foreach ($names as $index => $name){
 			if($index%4 == 0){
 				echo("<div class=\"row\">");
 			}
 			echo("<div class=\"col-md-3\">");
-				echo("<div class='person center pieChart__".$colors[$index%4]."'>");
+				echo("<div class='person center pieChart__".$colors[($index%4+$colorAddition)%4]."'>");
 					echo("<a href='piechart.php?name=".$name."'>");
 					echo("<img src=\"images/person.png\" alt=\"person\" class=\"personIcon icon\">");
 					echo("</a>");
@@ -27,6 +27,7 @@ $colors = ["red","blue","purple","green"];
 			echo("</div>");
 			if(($index+1)%4==0){
 				echo("</div>"); //end of row
+				$colorAddition=$colorAddition+1;
 			}
 
 		}
