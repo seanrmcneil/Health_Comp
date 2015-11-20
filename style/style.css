@@ -72,3 +72,9 @@ h2{
 	margin-top: -50px;
 }
 
+.progress{
+	width: 70%;
+}
+.progress-bar{
+	background-color: #BD0004 !important;
+}

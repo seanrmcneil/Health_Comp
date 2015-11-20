@@ -84,7 +84,6 @@
                             .attrTween( 'd', function( d ) {
                               var interpolate = d3.interpolate( this._current, d );
                               this._current = interpolate( 0 );
-                    
                               return function( t ) {
                                 return arc( interpolate( t ) );
                               };
@@ -121,7 +120,7 @@
     
     function drawDetailedInformation ( data, element ) {
       var bBox      = element.getBBox(),
-          infoWidth = width * 0.3,
+          infoWidth = width ,
           anchor,
           infoContainer,
           position;
@@ -130,35 +129,33 @@
                                     .attr( 'width', infoWidth )
                                     .attr(
                                       'transform',
-                                      'translate(' + (200) + ',' + ( bBox.height + bBox.y  + 40) + ')'
+                                      'translate(' + (120) + ',' + ( bBox.height + bBox.y  + 60) + ')'
                                     );
-        anchor   = 'start';
-        position = 'left';
 
 
-      infoContainer.data( [ data.value * 100 ] )
+
+      infoContainer.data( [ data.value * 100 ])
                     .append( 'text' )
                     .text ( '0 %' )
-                    .attr( 'class', 'pieChart--detail--percentage' )
+                    .attr( 'class', 'pieChart--detail--percentage ' )
                     .attr( 'x', 50 )
                     .attr( 'y', 50 )
-                    .attr( 'text-anchor', anchor )
                     .transition()
                     .duration( DURATION )
                     .tween( 'text', function( d ) {
                       var i = d3.interpolateRound(
                         +this.textContent.replace( /\s%/ig, '' ),
                         d
-                      );
+                      )
 
                       return function( t ) {
-                        this.textContent = i( t ) + ' %';
+                        this.textContent = i( t ) + ' %  '+data.description;
                       };
-                    } );
+                    }
 
-
-        infoContainer.data( [ data.description ] ) 
-                    .append( 'foreignObject' )
+                    )
+                    infoContainer.data( [ data.description ] )
+                    .append("foreignObject")
                     .append( 'xhtml:body' )
                     .attr(
                       'class',
@@ -168,9 +165,7 @@
                     .attr(
                       'class',
                       'pieChart--detail--textContainer' 
-                    )
-                    .html( data.description );
-
+                    );
     }
   }
   
