@@ -8,7 +8,8 @@ $colors = ["red","blue","purple","green"];
 
 <div class = "container">
 	<div class="row">
-		<h1 class="center">Student List</h1>
+		<h1 class="center">School List</h1>
+		<a href = "map.php"><h4 class="center">Points by State</h4></a>
 	</div>
 
 	<?php
