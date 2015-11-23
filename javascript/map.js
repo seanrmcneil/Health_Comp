@@ -13,11 +13,11 @@ function tooltipHtml(n, d){	/* function to create html content string in tooltip
 	"CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN", 
 	"WI", "MO", "AR", "OK", "KS", "LS", "VA"]
 		.forEach(function(d){ 
-			var low=Math.round(100*Math.random()), 
-				mid=Math.round(100*Math.random()), 
-				high=Math.round(100*Math.random());
+			var low=Math.round(1000*Math.random()), 
+				mid=Math.round(1000*Math.random()), 
+				high=Math.round(1000*Math.random());
 			sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]), 
-					avg:Math.round(mid), color:d3.interpolate( "#ffb3b4", "#BD0004")(low/100)}; 
+					avg:Math.round(mid), color:d3.interpolate( "#ffb3b4", "#BD0004")(low/1000)}; 
 		});
 	
 	/* draw states on id #statesvg */	

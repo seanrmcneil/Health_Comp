@@ -1,4 +1,4 @@
-<? 
+<?php
 include('header.php');
 ?>
 <div class="container">
@@ -13,6 +13,6 @@ include('header.php');
 
 <script src="javascript/map.js"></script>
 
-<?
+<?php
 include('footer.php');
 ?>
