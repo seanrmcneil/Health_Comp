@@ -12,6 +12,19 @@ $colors = ["red","blue","purple","green"];
 		<a href = "map.php"><h4 class="center">Points by State</h4></a>
 	</div>
 
+	<div class="row">
+		<div class="col-md-12">
+			<div class="person center pieChart_blue">
+				<a href="piechart.php?name=PS 184">
+					<img src="images/schoolWhite.png" alt="person" class="personIcon icon">
+				</a>
+			</div>
+			<h2 class="center">PS 184</h2>
+		</div>
+
+
+	</div>
+
 	<?php
 		$colorAddition=0;
 		foreach ($names as $index => $name){
