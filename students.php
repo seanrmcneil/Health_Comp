@@ -4,6 +4,7 @@ include 'header.php';
 
 $names = ["Sarah B.", "Evan C.", "John G.", "Alissa J.", "Cam D.", "Alex F.", "George P.", "Dina T.", "John C.", "Georgia S.", "Constance M.", "Timmy T."];
 $colors = ["red","blue","purple","green"];
+
 ?>
 
 <div class = "container">

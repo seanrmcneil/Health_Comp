@@ -1,30 +1,40 @@
 ;( function() {
 // data for the pie chart
+  values1 = Math.floor((Math.random() * 50) + 1);
+  values2 = Math.floor((Math.random() * 50) + 1);
+  values3 = 50 - values1
+  values4 = 50 - values2
+
+  console.log("val1 is: "+values1);
+  console.log("val2 is: "+values2);
+  console.log("val3 is: "+values3);
+  console.log("val4 is: "+values4);
+
   var data = {
     pieChart  : [
       {
         color       : 'red',
         description : 'Basketball',
         title       : 'Basketball',
-        value       : 0.12
+        value       : values1/100
       },
       {
         color       : 'blue',
         description : 'Frisbee',
         title       : 'Frisbee',
-        value       : 0.18
+        value       : values2/100
       },
       {
         color       : 'green',
         description : 'Soccer',
         title       : 'Soccer',
-        value       : 0.38
+        value       : values3/100
       },
       {
         color       : 'purple',
         description : 'Jump Rope',
         title       : 'Jump Rope',
-        value       : 0.32
+        value       : values4/100
       }
     ]
   };

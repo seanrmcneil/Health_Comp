@@ -2,6 +2,8 @@
 
 include 'header.php';
 $name = $_GET["name"];
+$points = rand (20 , 90);
+$points2 = rand($points, $points+100);
 
 ?>
 <div class="container">
@@ -36,11 +38,11 @@ $name = $_GET["name"];
       </div>
     </li>
     <li> 
-    <h2 class="center">53 points</h2>
+    <h2 class="center"><?php echo($points2); ?> points</h2>
     <div class="progress center">
-    <div class="progress-bar" role="progressbar" aria-valuenow="70"
-    aria-valuemin="0" aria-valuemax="100" style="width:70%">
-    70%
+    <div class="progress-bar" role="progressbar" aria-valuenow="100"
+    aria-valuemin="0" aria-valuemax="100" style="width:<?php echo($points); ?>%">
+    <?php echo($points); ?>%
   </div>
 </div>
     </li>
