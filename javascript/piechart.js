@@ -42,14 +42,9 @@
   var DURATION = 1500;
   var DELAY    = 500;
 
-  /**
-   * draw the fancy pie chart
-   *
-   * @param {String} elementId elementId
-   * @param {Array}  data      data
-   */
+
   function drawPieChart( elementId, data ) {
-    // TODO code duplication check how you can avoid that
+
     var containerEl = document.getElementById( elementId ),
         width       = containerEl.clientWidth,
         height      = width * 0.4,
@@ -178,12 +173,10 @@
                     );
     }
   }
-  
+
   function ಠ_ಠ() {
     drawPieChart(     'pieChart',     data.pieChart );
   }
-  
-  // yeah, let's kick things off!!!
   ಠ_ಠ();
-  
+
 })();

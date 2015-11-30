@@ -14,7 +14,7 @@ $colors = ["red","blue","purple","green"];
 
 	<div class="row">
 		<div class="col-md-12">
-			<div class="person center pieChart_blue">
+			<div class="person center pieChart__blue">
 				<a href="piechart.php?name=PS 184">
 					<img src="images/schoolWhite.png" alt="person" class="personIcon icon">
 				</a>
