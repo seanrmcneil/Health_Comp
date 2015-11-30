@@ -16,24 +16,28 @@
         color       : 'red',
         description : 'Basketball',
         title       : 'Basketball',
+        placement   : 20,
         value       : values1/100
       },
       {
         color       : 'blue',
         description : 'Frisbee',
         title       : 'Frisbee',
+        placement   : 100,
         value       : values2/100
       },
       {
         color       : 'green',
         description : 'Soccer',
         title       : 'Soccer',
+        placement   : 180,
         value       : values3/100
       },
       {
         color       : 'purple',
         description : 'Jump Rope',
         title       : 'Jump Rope',
+        placement   : 260,
         value       : values4/100
       }
     ]
@@ -126,15 +130,15 @@
     function drawDetailedInformation ( data, element ) {
       var bBox      = element.getBBox(),
           infoWidth = width ,
-          anchor,
+          placement = data.placement,
           infoContainer,
-          position;
+
 
         infoContainer = detailedInfo.append( 'g' )
                                     .attr( 'width', infoWidth )
                                     .attr(
                                       'transform',
-                                      'translate(' + (120) + ',' + ( bBox.height + bBox.y  + 60) + ')'
+                                      'translate(' + (120) + ',' + (placement + 10) + ')'
                                     );
 
 
