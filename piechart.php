@@ -56,28 +56,29 @@ $points2 = rand($points, $points+100);
       echo("<img src='images/contactButton.png' alt='contactButton' id='contactButton'>");
       echo("</div>");
       echo("</div>");
+      echo("<div id='emailForm'>");
+      echo("<div class='container'>");
+        echo("<form role='form'>");
+          echo("<div class='form-group col-lg-6'>");
+            echo("<label for='email'>Name:</label>");
+            echo("<input type='text' class='form-control' id='name' placeholder='Enter your name'>");
+          echo("</div>");
+          echo("<div class='form-group col-lg-6'>");
+            echo("<label for='pwd'>Email:</label>");
+            echo("<input type='email' class='form-control' id='email' placeholder='Enter Your Email'>");
+          echo("</div>");
+          echo("<div class='form-group col-lg-12'>");
+            echo("<label for='comment'>Message:</label>");
+            echo("<textarea class='form-control' rows='5' id='comment'></textarea>");
+          echo("</div>");
+          echo("<button type='submit' class='btn btn-default submitButton'>Submit</button>");
+        echo("</form>");
+      echo("</div>");
+    echo("</div>");
     }
 
   ?>
-  <div id="emailForm">
-    <div class="container">
-      <form role="form">
-        <div class="form-group col-lg-6">
-          <label for="email">Name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter your name">
-        </div>
-        <div class="form-group col-lg-6">
-          <label for="pwd">Email:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
-        </div>
-        <div class="form-group col-lg-12">
-          <label for="comment">Message:</label>
-          <textarea class="form-control" rows="5" id="comment"></textarea>
-        </div>
-        <button type="submit" class="btn btn-default submitButton">Submit</button>
-      </form>
-    </div>
-  </div>
+
 
 </div>
 </div>
