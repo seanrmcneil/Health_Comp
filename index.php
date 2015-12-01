@@ -23,7 +23,7 @@ include 'header.php';
 			<h1 class="center">School Progress</h1>
 		</div>
 		<div class = "col-md-4 pull-down">
-			<a href="students.php">
+			<a href="budget.php">
 				<img class = "icon" src = "images/budget.png" alt = "budget icon">
 			</a>
 			<h1 class="center">Budget/Inventory</h1>

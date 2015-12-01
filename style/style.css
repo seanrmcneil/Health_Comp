@@ -94,3 +94,20 @@ h2{
 .submitButton{
 	margin-left: 500px;
 }
+
+.budget1{
+	width: 70%;
+	text-align: center;
+	margin-left: 15%;
+	margin-top: 50px;
+}
+
+.budgetButton{
+	position: absolute;
+  top: 250px;
+  left: 320px;
+}
+
+.budgetButton:hover{
+	cursor: pointer;
+}
