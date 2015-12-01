@@ -20,7 +20,7 @@ $colors = ["red","blue","purple","green"];
 			}
 			echo("<div class=\"col-md-3\">");
 				echo("<div class='person center pieChart__".$colors[($index%4+$colorAddition)%4]."'>");
-					echo("<a href='piechart.php?name=".$name."'>");
+					echo("<a href='piechart.php?name=".$name."&type=student'>");
 					echo("<img src=\"images/person.png\" alt=\"person\" class=\"personIcon icon\">");
 					echo("</a>");
 				echo("</div>");

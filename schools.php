@@ -2,7 +2,7 @@
 
 include 'header.php';
 
-$names = ["PS 189", "St. Mary's", "PS 130", "PS 43", "Ridgemoore High", "William Mckinley", "PS 29", "Degrassi", "Ramaz Middle School", "Oak Grove", "Central School"];
+$names = ["PS 189", "St. Marys", "PS 130", "PS 43", "Ridgemoore High", "William Mckinley", "PS 29", "Degrassi", "Ramaz Middle School", "Oak Grove", "Central School"];
 $colors = ["red","blue","purple","green"];
 ?>
 
@@ -33,7 +33,7 @@ $colors = ["red","blue","purple","green"];
 			}
 			echo("<div class=\"col-md-3\">");
 				echo("<div class='person center pieChart__".$colors[($index%4+$colorAddition)%4]."'>");
-					echo("<a href='piechart.php?name=".$name."'>");
+					echo("<a href='piechart.php?name=".$name."&type=school'>");
 					echo("<img src=\"images/schoolWhite.png\" alt=\"person\" class=\"personIcon icon\">");
 					echo("</a>");
 				echo("</div>");

@@ -78,3 +78,19 @@ h2{
 .progress-bar{
 	background-color: #BD0004 !important;
 }
+
+#contactButton{
+	margin-top: 40px;
+}
+
+#contactButton:hover{
+	cursor: pointer;
+}
+
+#emailForm{
+	margin-top: 150px;
+}
+
+.submitButton{
+	margin-left: 500px;
+}
